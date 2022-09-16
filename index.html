@@ -13,13 +13,11 @@
     <header>
         <h1>Guess My Number Between 1 and 20</h1>
         <div class="number">?</div>
-
-
     </header>
     <main>
         <section class="left">
             <input type="number" class="guess" />
-            <button class="btn check">Check!</button>
+            <button class="check">Check!</button>
         </section>
         <section class="right">
             <p class="message">Start guessing...</p>
@@ -27,8 +25,13 @@
             <p>Highscore: <span class="highscore">0</span></p>
         </section>
     </main>
-    <footer><button class="btn again">Again!</button></footer>
+    <footer><button class="again">Again!</button></footer>
     <script src="script.js"></script>
+    <script>
+        (() => {
+            GameFunctions.onPageLoaded();
+        })()
+    </script>
 </body>
 
 </html>
